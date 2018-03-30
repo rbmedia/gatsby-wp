@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
 import MainMenu from '../components/Menu'
+import GrowGrid from '../components/GrowGrid'
 import './index.css'
 
 const TemplateWrapper = ({ children, data }) => (
@@ -19,13 +20,14 @@ const TemplateWrapper = ({ children, data }) => (
     <div
       style={{
         margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
+        maxWidth: '100%',
+        padding: '0px',
         paddingTop: 0,
       }}
     >
       {children()}
       <MainMenu menu={data} />
+      <GrowGrid menu={data} />
     </div>
   </div>
 )

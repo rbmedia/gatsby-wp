@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const IndexPage = () => (
-  <div>
+const IndexPage = ({ transition }) => (
+  <div style={transition && transition.style}>
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>

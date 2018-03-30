@@ -35,7 +35,7 @@ PostsTemplate.propTypes = {
 export default PostsTemplate
 
 export const pageQuery = graphql`
-    query postsQuery1{
+    query postsQuery{
         allWordpressPost{
             edges{
                 node{

@@ -9,7 +9,10 @@
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-react-helmet": "^2.0.8",
     "gatsby-source-wordpress": "^2.0.71",
-    "react-helmet": "^5.2.0"
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-helmet": "^5.2.0",
+    "react-scroll-to-component": "^1.0.2",
+    "react-transition-group": "^2.3.0"
   },
   "keywords": [
     "gatsby"
