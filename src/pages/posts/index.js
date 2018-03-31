@@ -32,7 +32,15 @@ PostsTemplate.propTypes = {
     edges: PropTypes.array,
 }
 
-export default PostsTemplate
+
+
+const PostPage = ({ transition, data }) => (
+  <div style={transition && transition.style}>
+    <PostsTemplate data={data}/>
+  </div>
+)
+
+export default PostPage
 
 export const pageQuery = graphql`
     query postsQuery1{

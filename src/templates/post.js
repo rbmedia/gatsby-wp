@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 
 
 
-class PostTemplate extends Component {
+class PostTpl extends Component {
   render() {
     const post = this.props.data.wordpressPost
 
@@ -21,12 +21,21 @@ class PostTemplate extends Component {
 }
 //<img src={post.image.sizes.thumbnail} />
 
-PostTemplate.propTypes = {
+PostTpl.propTypes = {
   data: PropTypes.object.isRequired,
   edges: PropTypes.array,
 }
 
-export default PostTemplate
+//set the transition wrapper
+const PostPage = ({ transition, data }) => (
+  <div style={transition && transition.style}>
+    <PostTpl data={data}/>
+  </div>
+)
+
+export default PostPage
+
+
 
 export const pageQuery = graphql`
   query currentPostQuery($id: String!) {
